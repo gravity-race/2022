@@ -1,10 +1,16 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const isNotDev = () => {
+  return ['staging', 'production'].indexOf(EmberApp.env()) >= 0;
+};
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    fingerprint: {
+      enabled: isNotDev()
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
