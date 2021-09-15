@@ -1,3 +1,38 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class="main-header">
+  <ul class="internal-links">
+    <li>
+      <a target="_blank" href="https://www.njuko.net/gravity_race_annecy_2021/select_competition"
+         class="gvt-link">
+        Inscriptions
+      </a>
+    </li>
+
+    <li>
+      <LinkTo @route="partners" class="gvt-link">
+        Parternaires
+      </LinkTo>
+    </li>
+  </ul>
+
+  <div class="logo">
+    <LinkTo @route="index">
+      <img src="http://www.gravity-race.fr/wp-content/uploads/2020/12/Logo-Noir.jpg" />
+    </LinkTo>
+  </div>
+
+  <ul class="social-medias">
+    <li>
+      <a href="https://www.facebook.com/gravityraces/" target="_blank" class="gvt-link">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com/gravity_race" target="_blank" class="gvt-link">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+  </ul>
+</header>
 
 {{outlet}}
